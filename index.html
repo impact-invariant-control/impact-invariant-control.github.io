@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Impact-Invariant Control: Maximizing Control Authority During Impacts">
+  <meta name="keywords" content="Impact-Invariant Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact-Invariant Control: Maximizing Control Authority During Impacts</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Impact-Invariant Control: Maximizing Control Authority During Impacts</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yangwill.github.io/">William Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://dair.seas.upenn.edu/">Michael Posa</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Pennsylvania,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2303.00817"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=_v_CKU47znQ"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/DAIRLab/dairlib"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <video id="teaser" autoplay muted loop playsinline height="100%">
+      <source src="./videos/box_jump.mp4"
+              type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified">
+          <p>
+          When legged robots impact their environment when executing these dynamic motions, they undergo large changes in their velocities in a short amount of time.
+          Measuring and applying feedback to these velocities is challenging, further complicated by uncertainty in the impact model and impact timing.
+          </p>
+          <p>
+          This work proposes a general framework for adapting feedback control during impact by projecting the control objectives to a subspace that is invariant to the impact event.
+          The resultant controller is robust to uncertainties in the impact event while maintaining maximum control authority over the impact-invariant subspace.
+          We demonstrate the improved performance of the projection over other commonly used heuristics on a walking controller for a planar five-link-biped.
+          The projection is also applied to jumping, box jumping, and running controllers for the compliant 3D bipedal robot, Cassie.
+          The modification is easily applied to these various controllers and we show that it is a critical component to deploying on the physical robot.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    
+    <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Impact-Invariance</h2>
+        <div class="columns is-3 is-centered">
+            <video id="teaser" autoplay muted loop playsinline width="50%">
+              <source src="./videos/five_link_biped_walking_tracking.mp4"
+                      type="video/mp4">
+            </video>
+        </div>  
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-6 has-text-centered">
+            <img src="./images/rabbit_gen_vel_tracking.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+             <p>Generalized Velocities</p>
+          </div>
+          <div class="column is-6 has-text-centered">
+            <img src="./images/rabbit_proj_vel_tracking.png"
+                   class="interpolation-image"
+                   alt="Interpolate start reference image."/>
+             <p>Impact-Invariant Velocities</p>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>Despite good tracking, the error for the generalized velocities spikes during the impact event due discontinuities from the impact event and inevitable mismatches in impact timing.
+          Projecting those same velocities to the impact-invariant space eliminates the discontinuity from the impact event and thus provides robustness to uncertainty in the impact event. </p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<section>
+  <div class="columns is-centered has-text-centered">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Highlights</h2>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./videos/cassie_running_1.mp4"
+                  type="video/mp4">
+        </video>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./videos/cassie_running_0.mp4"
+                  type="video/mp4">
+        </video>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{yang2023impact,
+  title={Impact-invariant control: Maximizing control authority during impacts},
+  author={Yang, William and Posa, Michael},
+  journal={arXiv preprint arXiv:2303.00817},
+  year={2023}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website borrows source code from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

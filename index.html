@@ -11,8 +11,6 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
-  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -21,8 +19,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
-  <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
   <script src="./static/js/index.js"></script>
 </head>
 <body>
@@ -112,25 +108,19 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          When legged robots impact their environment when executing these dynamic motions, they undergo large changes in their velocities in a short amount of time.
-          Measuring and applying feedback to these velocities is challenging, further complicated by uncertainty in the impact model and impact timing.
-          </p>
-          <p>
-          This work proposes a general framework for adapting feedback control during impact by projecting the control objectives to a subspace that is invariant to the impact event.
-          The resultant controller is robust to uncertainties in the impact event while maintaining maximum control authority over the impact-invariant subspace.
-          We demonstrate the improved performance of the projection over other commonly used heuristics on a walking controller for a planar five-link-biped.
-          The projection is also applied to jumping, box jumping, and running controllers for the compliant 3D bipedal robot, Cassie.
-          The modification is easily applied to these various controllers and we show that it is a critical component to deploying on the physical robot.
+          When legged robots impact their environment executing dynamic motions, they undergo large changes in their velocities in a short amount of time. Measuring and applying feedback to these velocities is challenging, further complicated by uncertainty in the impact model and impact timing. This work proposes a general framework for adapting feedback control during impact by projecting the control objectives to a subspace that is invariant to the impact event. The resultant controller is robust to uncertainties in the impact event while maintaining maximum control authority over the impact-invariant subspace. We demonstrate the improved performance of the projection over other commonly used heuristics on a walking controller for a planar five-link-biped. The projection is also applied to jumping, box jumping, and running controllers for the compliant 3D bipedal robot, Cassie. The modification is easily applied to these various controllers and is a critical component to deploying on the physical robot.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+  </div>
+</section>
 
-    
+<section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="container is-max-desktop">
         <h2 class="title is-3">Impact-Invariance</h2>
@@ -168,15 +158,42 @@
 <section>
   <div class="columns is-centered has-text-centered">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Highlights</h2>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./videos/cassie_running_1.mp4"
-                  type="video/mp4">
-        </video>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./videos/cassie_running_0.mp4"
-                  type="video/mp4">
-        </video>
+      <h2 class="title is-3">Running Controller Highlights</h2>
+        <div class="columns is-vcentered">
+          <div class="column is-6 has-text-centered">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./videos/cassie_running_0.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-6 has-text-centered">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./videos/cassie_running_1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column is-6 has-text-centered">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./videos/cassie_running_0054.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-6 has-text-centered">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./videos/cassie_running_0064.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="column is-6 has-text-centered">
+          <video id="teaser" autoplay muted loop playsinline height="100%">
+            <source src="./videos/cassie_running_0067.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
     </div>
   </div>
 </section>
